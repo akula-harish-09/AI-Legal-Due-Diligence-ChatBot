@@ -1,0 +1,34 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python bytecode and environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+# Local uploads and vector databases
+**/data/
+**/chroma_db/
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Downloaded ML model and tool caches
+.huggingface/
+.cache/huggingface/
+.cache/torch/
+
+# Logs and OS/editor artifacts
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
